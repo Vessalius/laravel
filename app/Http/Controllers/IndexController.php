@@ -32,7 +32,7 @@ class IndexController extends Controller{
     }
 
     public function del(){
-        DB::table('users')->where('id', '=', 6)->delete();
+        DB::table('user')->where('id', '=', 6)->delete();
         return 'success';
     }
 
