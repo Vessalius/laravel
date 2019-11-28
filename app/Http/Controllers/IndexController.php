@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-class IndexController extends Controller
-{
+class IndexController extends Controller{
     public function index(){
-        echo 11111;
+        $user=Db::name('user')->get();
+        print_r($user);
     }
 }
