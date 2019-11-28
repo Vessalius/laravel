@@ -31,4 +31,9 @@ class IndexController extends Controller{
         return 'success';
     }
 
+    public function del(){
+        DB::table('users')->where('id', '=', 6)->delete();
+        return 'success';
+    }
+
 }
