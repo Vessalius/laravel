@@ -16,7 +16,8 @@ class IndexController extends Controller{
     }
 
     public function edit(){
-
+        DB::table('user')->where('id', 1)->update(['name' => '555555']);
+        return 'success';
     }
 
     public function add(){
