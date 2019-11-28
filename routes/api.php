@@ -18,3 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/index', 'IndexController@index');
+
+Route::get('/add', 'IndexController@add');
