@@ -15,7 +15,7 @@ class IndexController extends Controller{
         print_r(json_decode(json_encode($user),true));
     }
 
-    public function update(){
+    public function edit(){
 
     }
 
@@ -23,6 +23,10 @@ class IndexController extends Controller{
         DB::table('user')->insert(
             ['name' => '测试123']
         );
+        DB::table('user')->insertOrIgnore([
+            ['id' => '', 'name' => '21313'],
+            ['id' => '', 'name' => '56646']
+        ]);
         return 'success';
     }
 
