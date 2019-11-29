@@ -11,7 +11,7 @@ class IndexController extends Controller{
         }*/
        // $user = DB::select('select * from user', [1]);
      //   print_r(json_decode(json_encode($user),true));
-        return view('welcome', $user);
+      //  return view('welcome', $user);
     }
 
 }
