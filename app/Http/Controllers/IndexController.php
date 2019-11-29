@@ -1,12 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 class IndexController extends Controller{
     public function index(){
-       // DB::setFetchMode(PDO::FETCH_ASSOC);
         $user=DB::table('user')->get();
         /*foreach ($user as $val) { //打印name列
             echo $val->name;
