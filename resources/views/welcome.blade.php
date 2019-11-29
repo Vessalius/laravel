@@ -10,7 +10,7 @@
     </head>
     <body>
      <div>
-         <h1>112222</h1>
+         <h1>{{ $user }}</h1>
      </div>
     </body>
 </html>
